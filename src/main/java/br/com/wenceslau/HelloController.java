@@ -18,8 +18,11 @@ public class HelloController {
 
         String msg = String.format("Hi %s. Spring MVC Com Thymeleaf Get Request received: %s", nome, LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")));
 
+        //Here I am adding the message to the model.
+        //The model is a map that will be sent to the view
         model.addAttribute("mensagem", msg);
 
+        //Here I am returning the name of the view
         return "hello";
     }
 }

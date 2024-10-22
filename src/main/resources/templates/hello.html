@@ -3,6 +3,13 @@
     <meta charset="UTF-8">
 </head>
     <body>
+        <!--
+            Thymeleaf is a template engine that allows us to create dynamic content in our views.
+            The views are processed on the server side and the final result is sent to the client.
+
+            Here I am using the th:text attribute to display the message that was passed from the controller
+            on the Model object.
+         -->
         <span th:text="${mensagem}"></span>!
     </body>
 </html>
